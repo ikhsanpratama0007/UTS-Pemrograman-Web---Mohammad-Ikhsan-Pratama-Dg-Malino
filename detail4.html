@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PKL di Kantor BAPENDA Kota Palu</title>
+	<link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+		#slide4:checked ~ .slider-container {
+			transform: translateX(-99.99%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="works.html">Works</a></li>
+			<li><a href="experience.html">Experience</a></li>
+			<li><a href=""><strong>____</strong></a></li>
+			<li><a href="profil.html">Profil</a></li>
+			<li><a href="https://www.instagram.com/ikhsnn07/" target="_blank">Instagram</a></li>
+			<li><a href="https://www.youtube.com/@icamta20">Youtube</a></li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="pic/bpd1.jpeg" class="full-width-image" alt="Cosmetics Branding Project">
+			<h1 class="project-title">Praktek Kerja Lapangan (PKL)<br>BAPENDA Palu</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="index.html">Home</a> / PKL BAPENDA KOTA PALU
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Bapenda Kota Palu</h2>
+						<p>Tempat dimana kepribadian saya berubah drastis. Tanpa sengaja dipertemukan dengan orang orang yang bermanfaat dan baik kepada saya dengan lingkungan positif, asik, bahkan anti membully, semua berawal di kantor BAPENDA KOTA PALU</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Tempat PKL yang Melenceng</h2>
+						<p>Menjadi Siswa PKL jurusan multimedia (melenceng) pertama di tempat ini merupakan suatu kebanggaan tersendiri karena dengan itu dapat membawa nama sekolah dan memperkenalkan sekolah lebih jauh. Disini belajar cukup banyak, dari relasi, sistem pajak, cara mendata pajak, bahkan cara menagih pajak.</p>
+						<ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Pertemanan</h2>
+						<p>Banyak pelajaran dari tempat ini, mulai dari,</p>
+						<ul>
+							<li>Lingkungan pertemanan supportif,</li>
+							<li>Saling tolong menolong,</li>
+							<li>Tidak saling membeda bedakan,</li>
+							<li>Saling berbagi pengalaman pahit & baik</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Kesan & Pesan</h2>
+						<p>Walaupun sudah 3 tahun berlalu, saya harap kalian:</p>
+						<ul>
+							<li>- Sukses di tempat kalian sekarang </li>
+							<li>- Semoga saat ketemu lagi masih sama dengan yang dulu</li>
+							<li>- Pengalaman yang sangat berharga buat saya</li>
+							<li>- Senang bertemu kalian, Miss you ALL</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>MEMORY PICTURE OF PKL BAPENDA 2023</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							<input type="radio" name="slider" id="slide4" class="slider-toggle">
+
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="pic/bpd.jpeg" alt="Ambil Job satpam">
+								</div>
+								<div class="slider-slide">
+									<img src="pic/bpd2.jpeg" alt="End of PKL">
+								</div>
+								<div class="slider-slide">
+									<img src="pic/bpd3.jpeg" alt="Melayat">
+								</div>
+								<div class="slider-slide">
+									<img src="pic/bpd4.jpeg" alt="Ambil sertifikat">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+								<label for="slide4" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Want to work together?<br>
+				send your message <br><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMTJNVXMbfksqJcTFmvVPsdmtqgjSGNrVkWGkcQfSPvHRzGXfVdtdmPPhCbQbwTTCWDlbZ" class="email">ikhsanp2007@gmail.com</a></h2>
+				<p>Made with 🧠 -  Ikhsan Pratama 2026</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f849304ab2af8d0',t:'MTc3ODIwMjUxNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	</html>

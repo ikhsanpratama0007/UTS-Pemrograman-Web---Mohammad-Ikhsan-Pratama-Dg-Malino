@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HIMATIF - Organisasi</title>
+	<link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+		#slide4:checked ~ .slider-container {
+			transform: translateX(-99.99%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="works.html">Works</a></li>
+			<li><a href="experience.html">Experience</a></li>
+			<li><a href=""><strong>____</strong></a></li>
+			<li><a href="profil.html">Profil</a></li>
+			<li><a href="https://www.instagram.com/ikhsnn07/" target="_blank">Instagram</a></li>
+			<li><a href="https://www.youtube.com/@icamta20">Youtube</a></li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="pic/hmj1.jpeg" class="full-width-image" alt="HIMATIF UINDK">
+			<h1 class="project-title">Himpunan Mahasiswa<br>Informatika</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="index.html">Home</a> / Himpunan Mahasiswa Informatika UIN Datokarama Palu
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Himpunan Mahasiswa Informatika</h2>
+						<p>HIMATIF menjadi singkatannya, banyak hal dan pelajaran yang dapat dipetik dari HIMATIF, mulai dari lingkungan yang positif bahkan saling menghargai tanpa saling menjudge satu sama lain, HIMATIF menjadi salah satu organisasi mahasiswa yang cukup baik untuk belajar kepemimpinan dan kepercayaan diri.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Riwayat Kepanitiaan</h2>
+						<p>Cukup banyak yang saya dapatkan dari HIMATIF, berikut yang pernah menjadi tanggung jawab saya:</p>
+						<ul>
+							<li>Menjadi Koordinator (Koor) Divisi PDD - Training Management Organization (TMO) 2025</li>
+							<li>Menjadi Anggota Divisi PDD - DiezUP 2025 & IT Experience 2025</li>
+							<li>Menjadi Anggota Departemen Sosial dan Kemasyarakatan (SOSKEM)</li>
+							<li>Menjadi Anggota Divisi PDD - TechVill 2026 & Dies Natalis 2026</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Pengalaman</h2>
+						<p>Selain Menjadi Koor, Saya Juga Bahkan Turut Andil Dalam:</p>
+						<ul>
+							<li>Pembuatan Video Coming Soon & (H-) - Training Management Organization (TMO) 2025, DiezUP 2025 & IT Experience 2025</li>
+							<li>Pembuatan Video - DOokumenter Dies Natalis 2025</li>
+							<li>Pembuatan Video Coming Soon & (H-) - TechVill</li>
+							<li>Pembuatan Pamflet Hari Besar & Selamat - SOSKEM</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Kesan & Pesan</h2>
+						<p>Senang Bisa Menjadi Bagian Dari Himatif, FOR HIMATIF:</p>
+						<ul>
+							<li>- Lebih kuatkan solidaritas,</li>
+							<li>- Pertahankan lingkungan positif itu,</li>
+							<li>- Semoga kedepannya makin sukses dan ramai,</li>
+							<li>- Jaya terus.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Kegiatan HIMATIF</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							<input type="radio" name="slider" id="slide4" class="slider-toggle">
+
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="pic/s1.jpeg" alt="Techstart">
+								</div>
+								<div class="slider-slide">
+									<img src="pic/s2.jpeg" alt="Dies Natalis">
+								</div>
+								<div class="slider-slide">
+									<img src="pic/s3.jpeg" alt="IT Experience">
+								</div>
+								<div class="slider-slide">
+									<img src="pic/s4.jpeg" alt="Training Management Organization">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+								<label for="slide4" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Want to work together?<br>
+				send your message <br><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMTJNVXMbfksqJcTFmvVPsdmtqgjSGNrVkWGkcQfSPvHRzGXfVdtdmPPhCbQbwTTCWDlbZ" class="email">ikhsanp2007@gmail.com</a></h2>
+				<p>Made with 🧠 -  Ikhsan Pratama 2026</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f849304ab2af8d0',t:'MTc3ODIwMjUxNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	</html>

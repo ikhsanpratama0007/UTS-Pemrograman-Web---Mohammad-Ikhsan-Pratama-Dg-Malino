@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kelas Informatika A</title>
+	<link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+		#slide4:checked ~ .slider-container {
+			transform: translateX(-99.99%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="works.html">Works</a></li>
+			<li><a href="experience.html">Experience</a></li>
+			<li><a href=""><strong>____</strong></a></li>
+			<li><a href="profil.html">Profil</a></li>
+			<li><a href="https://www.instagram.com/ikhsnn07/" target="_blank">Instagram</a></li>
+			<li><a href="https://www.youtube.com/@icamta20">Youtube</a></li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="pic/if.jpeg" class="full-width-image" alt="Cosmetics Branding Project">
+			<h1 class="project-title">Kelas Informatika<br>A</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="index.html">Home</a> / Kelas Informatika A
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Kelas Informatika A</h2>
+						<p>Kelas yang begitu seru dengan teman teman yang cukup supportif antar sesama tanpa adanya saling membedakan, tidak adanya jelek jelek an satu sama lain, bahkan sefrekuensi, dari kelas ini banyak kepribadian saya yang terbentuk lebih leluasa tanpa takut omongan orang, INFORMATIKA A 2024.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Angkatan 2024</h2>
+						<p>Dimulai dan bertemunya kami di tahun 2024 tepatnya di UIN Datokarama Kota Palu</p>
+						<ul>
+							<li>Kami semua dipertemukan bukan tanpa alasan yang jelas,</li>
+							<li>Namun berarti untuk mengetahui satu sama lain lebih jelas tanpa adanya toxic,</li>
+							<li>Lingkungan positif dan seru ini menjadikan kelas ini seru,</li>
+							<li>Orang orangnya bahkan tidak ada yang berpikiran dikucilkan atau bahkan sampai keluar.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Pertemanan</h2>
+						<p>Sebelum saling mengenal satu sama lain, ternyata kelas ini sefrekuensi,</p>
+						<ul>
+							<li>Support satu sama lain,</li>
+							<li>Peduli sesama teman,</li>
+							<li>Tidak saling membully,</li>
+							<li>Suka berbagi info perkuliahan.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Kesan & Pesan</h2>
+						<p>Selain itu, pesan saya buat kelas ini:</p>
+						<ul>
+							<li>- Sukses buat kalian semua,</li>
+							<li>- Rajin rajin dan kuat kuat di jurusan ini,</li>
+							<li>- Tetap jaga silaturahim,</li>
+							<li>- Terimakasih untuk pengalaman baik ini.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Keseruan Informatika A</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							<input type="radio" name="slider" id="slide4" class="slider-toggle">
+
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="pic/sf1.jpeg" alt="After MK">
+								</div>
+								<div class="slider-slide">
+									<img src="pic/sf2.jpeg" alt="Bukber 2026">
+								</div>
+								<div class="slider-slide">
+									<img src="pic/sf3.jpeg" alt="Ultah">
+								</div>
+								<div class="slider-slide">
+									<img src="pic/sf4.jpeg" alt="After Event">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+								<label for="slide4" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Want to work together?<br>
+				send your message <br><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMTJNVXMbfksqJcTFmvVPsdmtqgjSGNrVkWGkcQfSPvHRzGXfVdtdmPPhCbQbwTTCWDlbZ" class="email">ikhsanp2007@gmail.com</a></h2>
+				<p>Made with 🧠 -  Ikhsan Pratama 2026</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f849304ab2af8d0',t:'MTc3ODIwMjUxNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	</html>
