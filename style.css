@@ -1,0 +1,135 @@
+body{
+	font-family: 'IBM Plex Mono', monospace;
+	background-color: #e8ffeb;
+	cursor:context-menu;
+	color: rgb(0, 0, 0);
+}
+body, ul{
+	margin: 0;
+	padding:0;
+}
+
+h1.log{
+	text-shadow: 3px 3px 6px rgb(0, 0, 0);
+	margin-bottom: -0px;
+}
+
+h1,h2, .skill-list {
+	font-family:slackey, cursive;
+}
+
+img{
+	/*this limit width image*/
+	max-width: 100%;
+}
+nav {
+    background-color: #92ffbe;
+    position: fixed;
+    top: 0;
+    z-index: 999;  
+    width: 100%;
+    box-shadow: 1px 2px 30px rgba(255, 255, 255, 0.5);
+}
+
+header {
+    height: 80vh;
+    margin-top: 60px;
+    background-image: url('pic/ex.png');
+    background-repeat: repeat-x;
+    animation: slideBackground 20s linear infinite;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-container {
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-text {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+    font-size: 100px; 
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    line-height: 1;
+    text-shadow: 10px 10px 20px rgb(0, 0, 0);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 80px;
+    }
+}
+
+@keyframes slideBackground {
+  from { background-position: 0 0; }
+  to { background-position: -500px 0; }
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0 15px;
+	padding:0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+nav ul{
+	margin: 0 auto;
+	text-align: center;
+	padding: 26px;
+
+}
+
+footer{
+	text-align: center;
+	margin:100px;
+
+}
+footer h2{
+	font-size: 50px;
+	margin-bottom:100px; 
+	color: rgb(2, 95, 84);
+
+}
+.right-alignment{
+	text-align: right;
+}
+
+nav li a{
+	text-decoration: none;
+	color: black;
+}
+nav li a:hover{
+	text-decoration: underline;
+}
+
+a.email {
+	text-decoration: none;
+	color: rgb(2, 95, 84);
+}
+
+a.email:hover {
+	color: #000000;
+	transition: 0.7s;
+}
