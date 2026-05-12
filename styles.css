@@ -1,0 +1,258 @@
+body{
+	font-family: 'IBM Plex Mono', monospace;
+	background-color: #e8ffeb;
+	cursor:context-menu;
+	color: rgb(2, 95, 84);
+}
+body, ul{
+	margin: 0;
+	padding:0;
+}
+
+h1.log{
+	text-shadow: 3px 3px 6px rgb(255, 255, 255);
+	margin-bottom: -0px;
+}
+
+h1,h2, .skill-list {
+	font-family:slackey, cursive;
+}
+
+img{
+	/*this limit width image*/
+	max-width: 100%;
+}
+nav{
+	background-color: #92ffbe;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	box-shadow: 1px 2px 30px #ffffff;
+}
+
+header{
+	top:70px;
+	font-family: slackey, cursive;
+	position: relative;
+	margin-bottom: 140px;
+	background-image: url('pic/bg\ intro\ cat.png');
+	background-repeat: repeat-x;
+  	animation: slideBackground 20s linear infinite;
+	background-size: cover;
+	background-position-y: -290px; 
+	overflow: hidden;
+	box-shadow: 1px 2px 30px #92ffbe;
+}
+
+@keyframes slideBackground {
+  from { background-position: 0 0; }
+  to { background-position: -500px 0; }
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0 15px;
+	padding:0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+nav ul{
+	margin: 0 auto;
+	text-align: center;
+	padding: 26px;
+
+}
+
+h1{
+	font-size: 100px;
+	line-height: 130%;
+}
+h2{
+	font-size: 30px;
+	line-height: 130%;
+}
+h1, h2{
+	font-weight: normal;
+}
+p{
+	line-height: 150%;
+}
+
+ul li{
+	list-style: none;
+	margin: 10px 0;
+	padding-left: 10px;
+}
+
+.button1{
+	border: 1px solid black;
+	font-size: 15px;
+	border-radius: 20px;
+	text-decoration: none;
+	color: black;
+	margin-top: 10px;
+	margin-left: 6px;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	display: inline-block;
+	transition: background 0.5s ease-in-out;
+}
+.button1:hover{
+	background:black;
+	color: #92ffbe; 
+}
+
+
+.button{
+	border: 1px solid black;
+	font-size: 15px;
+	border-radius: 20px;
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px;
+	display: inline-block;
+	transition: background 0.5s ease-in-out;
+}
+.button:hover{
+	background:black;
+	color: #92ffbe; 
+}
+
+figcaption{
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+.intro-img{
+	box-shadow: 1px 2px 30px #008b37;
+	margin-top: 30px;
+
+}
+
+h2.skill{
+	font-weight: 900;
+	font-style: oblique;
+	text-align: center;
+	font-size: 40px;
+}
+.skill-list {
+	font-family:slackey, cursive;
+	text-align: left;
+	margin-left: 30%;
+	font-size: 50px;
+	line-height: 150%
+}
+
+ul li a.sk{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+ul li a:hover{
+	color: #008b37;
+	transition: all 0.5s;
+}
+
+.project{
+	margin: 30px 0; 
+	padding: 50px;
+}
+
+.blue{
+	background-color: #c5ffdc;
+}
+
+.project .button{
+	margin-top: 10px;
+}
+
+footer{
+	text-align: center;
+	margin:100px;
+}
+footer h2{
+	font-size: 50px;
+	margin-bottom:100px; 
+	font-weight: bold;
+}
+.right-alignment{
+	text-align: right;
+}
+
+li.empty{
+	width: 90px;
+	border-top: 1px solid black;
+	top:-5px;
+	position: relative; 
+}
+
+nav li a{
+	text-decoration: none;
+	color: black;
+}
+nav li a:hover{
+	text-decoration: underline;
+}
+
+a.email {
+	text-decoration: none;
+	color: rgb(2, 95, 84);
+}
+
+a.email:hover {
+	color: #000000;
+	transition: 0.7s;
+}
+
+.experience-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    
+    border-top: 40px solid #d1d1d1;
+    
+    border-bottom: 60px solid #bcbcbc;
+    
+    background: linear-gradient(
+        to bottom, 
+        #e8ffeb 0%,  
+        #d0ebd4 100%  
+    );
+}
+
+.experience-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: rgba(0,0,0,0.1);
+}
+
+.experience-section::after {
+    top: 0;
+}
+
+.rope-left, .rope-right {
+    position: absolute;
+    top: -40px;
+    width: 8px;
+    height: 100%;
+    background-color: #5d4037;
+    border-radius: 5px;
+    transform-origin: top center;
+    animation: ropeSwing 4s ease-in-out infinite;
+    z-index: 1;
+}
+
+.rope-left { left: 20%; }
+.rope-right { right: 20%; animation-delay: -2s; }
+
+@keyframes ropeSwing {
+    0% { transform: rotate(-1.5deg); }
+    50% { transform: rotate(1.5deg); }
+    100% { transform: rotate(-1.5deg); }
+}
